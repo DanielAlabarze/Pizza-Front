@@ -164,3 +164,31 @@ footer ul {
     display: none;
   }
 }
+
+@media screen and (max-width: 450px) {
+  footer .footer__logo {
+    color: var(--lightWhite);
+    font-size: 12px;
+    /*Añadimos flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    right: 2.5rem;
+  }
+  .pizza {
+    width: 5rem;
+  }
+
+  footer ul {
+    color: var(--lightWhite);
+    /*Añadimos flex*/
+    display: inline-block;
+    position: absolute;
+    gap: 1rem;
+    left: 2.5rem;
+    line-height: 1.8rem;
+  }
+}
